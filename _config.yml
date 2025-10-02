@@ -1,0 +1,30 @@
+title: myBlog
+email: sm@marandi.in
+description: >-
+  Writing, thoughts, ideas, experiences, etc.
+# If deploying as a project site, set your username and repo below
+# and keep baseurl. For a user/organization site (username.github.io),
+# set baseurl to empty and update url accordingly.
+url: "https://sumitmarandi.github.io"
+baseurl: "/myBlog"
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: /:categories/:year/:month/:day/:title/
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# Custom site variables
+author:
+  name: Sumit Marandi
+  url: https://sumitmarandi.github.io
+  email: sm@marandi.in

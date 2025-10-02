@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --bg: #0b0f19;
+  --text: #e6e6e6;
+  --muted: #a1a1aa;
+  --primary: #7c3aed;
+  --link: #60a5fa;
+  --card-bg: #111827;
+  --border: #1f2937;
+  --radius: 12px;
+  --max-w: 820px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 20px/1.7 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+.container {
+  max-width: var(--max-w);
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(11, 15, 25, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+}
+.site-header .container { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  height: 60px; 
+}
+
+.site-title { 
+  color: var(--text); 
+  text-decoration: none; 
+  font-weight: 700; 
+}
+.site-nav a { color: var(--muted); margin-left: 16px; text-decoration: none; }
+.site-nav a:hover { color: var(--text); }
+
+.site-content { padding: 32px 0 60px; }
+
+.site-footer { border-top: 1px solid var(--border); color: var(--muted); }
+.site-footer .container { padding: 24px 20px; }
+
+h1, h2, h3 { line-height: 1.2; }
+h1 { font-size: 2rem; }
+
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list li { 
+  padding: 16px; margin: 12px 0; 
+  background: var(--card-bg); 
+  border: 1px solid var(--border); 
+  border-radius: var(--radius); 
+  display: flex;
+  flex-direction: column;
+}
+
+.post-link { color: var(--text); text-decoration: none; font-weight: 600; }
+.post-link:hover { color: var(--link); }
+.post-date { display: inline-block; min-width: 120px; color: var(--muted); }
+
+.post-title { margin: 0 0 8px; }
+.post-meta { margin: 0 0 16px; color: var(--muted); }
+.post-content img { max-width: 100%; border-radius: 8px; }
+.post-content code { background: #111; padding: 2px 6px; border-radius: 6px; }
+.post-content pre { background: #0d1117; padding: 16px; border-radius: 10px; overflow: auto; }
+
+/* Social Share Buttons */
+.post-share {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.post-share h4 {
+  margin: 0 0 1rem;
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+  transform: translateY(-1px);
+  color: var(--text);
+  border-color: var(--primary);
+}
+
+.share-btn svg {
+  flex-shrink: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.share-btn:hover svg {
+  opacity: 1;
+}
+
+/* Platform-specific colors on hover */
+.share-btn.twitter:hover {
+  background: rgba(29, 161, 242, 0.1);
+  color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.share-btn.linkedin:hover {
+  background: rgba(0, 119, 181, 0.1);
+  color: #0077b5;
+  border-color: #0077b5;
+}
+
+.share-btn.facebook:hover {
+  background: rgba(24, 119, 242, 0.1);
+  color: #1877f2;
+  border-color: #1877f2;
+}
+
+.share-btn.reddit:hover {
+  background: rgba(255, 69, 0, 0.1);
+  color: #ff4500;
+  border-color: #ff4500;
+}
+
+.share-btn.devto:hover {
+  background: rgba(9, 9, 9, 0.1);
+  color: #000;
+  border-color: #000;
+}
+
+.share-btn.email:hover {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+  border-color: #22c55e;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .share-buttons {
+    gap: 6px;
+  }
+  
+  .share-btn {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+  
+  .share-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Customize the theme by overriding CSS variables above, e.g.
+:root { --primary: #10b981; --link: #34d399; }
+*/
