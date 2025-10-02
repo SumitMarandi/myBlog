@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to myBlog — A New Beginning"
+title: "Welcome to myBlog"
 author: "Sumit Marandi"
 date: 2025-10-02 10:00:00 +0530
 ---
