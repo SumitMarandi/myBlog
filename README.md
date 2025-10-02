@@ -146,10 +146,8 @@ This is my first Jekyll post!
 print("Hello, Jekyll!")
 ```
 
-![Alt text](path/to/image.jpg)
-```
-
 ## 🎨 Customizing Styles
+```
 
 ### CSS Variables Approach
 
