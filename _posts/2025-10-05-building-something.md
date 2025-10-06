@@ -5,7 +5,7 @@ author: "Sumit Marandi"
 date: 2025-10-05 22:00:00 +0530
 ---
 
-# Building something
+# I'm Building something
 
 Today I'm creating a new application name not revealing, let's just say myApp for now (typical vibe coder naming &#128515;).
 
