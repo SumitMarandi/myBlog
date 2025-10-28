@@ -70,7 +70,6 @@ Quality over quantity, always.
 
 This is just the beginning, and I'm excited to build this in public. Here's how you can be part of it:
 
-- **Subscribe** via the [RSS feed](/myBlog/feed.xml) to get updates
 - **Reach out** at [sm@marandi.in](mailto:sm@marandi.in) if something resonates or if you have questions
 - **Share topics** you'd like me to explore — I'm always looking for interesting problems to dive into
 - **Connect with me** on [GitHub](https://github.com/sumitmarandi) to see what I'm building
